@@ -1,0 +1,141 @@
+/* Importing Neonderthaw font */
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('pirate-ships-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+    color: #FF1493; /* Neon Pink */
+    font-size: 3rem; /* Increased font size */
+    font-family: 'Neonderthaw', sans-serif; /* Apply Neonderthaw font */
+    text-shadow: 0 0 15px cyan, 0 0 10px magenta;
+}
+
+/* The rest of your CSS remains the same */
+.menu-container {
+    text-align: center;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.food-item {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.food-item img {
+    width: 100%;  /* Make images fit the container */
+    height: 200px; /* Set a fixed height to ensure uniform size */
+    object-fit: cover; /* Ensures the images are cropped properly if necessary */
+    border-radius: 10px;
+}
+
+.food-item h3 {
+    color: #FFD700; /* Gold */
+    margin: 10px 0;
+}
+
+/* Neon Cyan Button */
+.food-item button,
+#cart-button,
+button {
+    background-color: #00FFFF; /* Neon Cyan */
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.food-item button:hover,
+#cart-button:hover,
+button:hover {
+    background-color: #00CED1; /* Darker Neon Cyan */
+}
+
+/* Cart Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    color: white;
+}
+
+button {
+    background-color: #FF6347; /* Tomato Red */
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D62C1A;
+}
+
+/* Cart Buttons */
+.cart-item button {
+    background-color: #32CD32; /* Green */
+    border: none;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+#cart-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color:#00CED1;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#cart-button:hover {
+    background-color: #D62C1A;
+}
